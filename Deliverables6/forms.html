@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Scholarships</title>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<img src="Solar.png" alt="logo">
+  </head>
+  
+  <script>
+	/*********** Hides menu and shows text********/
+	$(document).ready(function(){
+	$("#donor").toggle();
+	$("#clearform").click(function(){
+		$("#apply").toggle();
+		$("#donor").toggle();
+		});
+	});
+  </script>
+  
+
+  <body>
+  <header>
+	<div id="top">
+	<nav id="topmenu">
+    	<ul>
+    		<li><a href="SolarPV.html">Home</a></li>
+            <li><a href="SolarPV.html">PV System<span class="arrow">More Link</span></a>
+            	<ul class="sublist">
+                <li><a href="SolarPV.html">Monitoring</a></li>                	
+				<li><a href="SolarPV.html">Performance</a></li>
+                <li><a href="SolarPV.html">Compare System</a></li>
+				
+                </ul>
+            </li>
+            
+            <li><a href="">Data AnaLytics</a></li>
+            <li><a href="">Cybersecurity <span class="arrow">More Link</span></a></li>       
+    	</ul>
+		
+    </nav>
+	</header>
+	<br><br>
+	<div class="container">
+  <form id="apply">
+	<td width="20%"><button id="clearform">Switch to Client form</button></td><br>
+	<p>location Form</p>
+	<label for="LocationID">LocationID:</label>
+    <input type="text" id="idnum" name="idnum" required>
+  
+    <label for="ClientID">ClientID:</label>
+    <input type="text" id="CID" name="CID" >
+
+	<label for="address1">Address1:</label>
+	<input type="address1" id="address1" name="address1" required>
+	
+	<label for="address2">Address2:</label>
+	<input type="address2" id="address2" name="address2" required>
+	
+	<label for="City">City:</label>
+    <input type="text" id="city" name="city" >
+	
+	<label for="State">State:</label>
+    <input type="text" id="state" name="state" >
+	
+	<label for="postalcode">Postal:</label>
+    <input type="text" id="pcode" name="pcode" >
+	
+	<label for="country">Country:</label>
+    <input type="text" id="country" name="country" >
+	
+	<label for="phone">Enter your phone number:</label>
+	<input type="int" id="phone" name="phone">
+	
+	
+	
+    <input type="submit" value="Submit">
+	
+  </form>
+  
+  <form id="Cilent">
+	<td width="20%"><button id="clearform">Switch to Location form</button></td><br>
+	<p>Client Form</p>
+    <label for="ClientCode">ClientCode:</label>
+    <input type="text" id="ccode" name="ccode" >
+	
+	<label for="cname">Clientname:</label>
+    <input type="text" id="cname" name="cname" >
+	
+	<label for="ctype">ClientType:</label>
+	<input type="text" id="ctype" name="ctype" >
+	
+	
+	
+	
+    <input type="submit" value="Submit">
+	
+  </form>
+  
+  
+</div>
+
+					
+	</table>
+	
+	
+  </body>
+</html>
