@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>SolarPV</title>
+ <meta charset="UTF-8" />	
+ <link rel="stylesheet" type="text/css" href="stylesheet.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+ <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+ <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+ <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400italic,400,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+ <script type="text/javascript" src="modernizr.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ <img src="Solar.png" alt="logo" >
+ <a href="Form.html" class="button">Join Us</a>
+ <a href="Login.html" class="button">Login</a>	
+ </head> 
+  <header>
+	
+	<div id="top">
+	<nav id="topmenu">
+    	<ul>
+    		<li><a href="SolarPV.html">Home</a></li>
+            <li><a href="#">PV Module</a></li>
+            <li><a href="#">PV System<span class="arrow">More Link</span></a>
+            	<ul class="sublist">
+                <li><a href="#">Monitoring</a></li>                	
+				<li><a href="#">Performance</a></li>
+                <li><a href="#">Compare Sytem</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="#">Data AnaLytics</a></li>
+            <li><a href="#">Cybersecurity <span class="arrow">More Link</span></a></li>
+			<li><a href="Scholarship.html">Scholarship</a></li>
+    	</ul>
+		
+    </nav>
+</div>
+  </header>
+  
+ 
+  <body>
+	
+	
+	<main>
+	<br><br>
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="solarpanel.jpg" style="width:100%">
+  
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="roofsolar.jpg" style="width:100%">
+  
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 3</div>
+		<img src="Solarwork.jpg" style="width:100%">
+		  
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+</main>
+	<asideleft>
+		<nav class="sidenav">
+			<a href="#">All News</a> 
+		</nav>
+		<a href="#">Northern Forest Produces results</a>
+		<hr><a href="#">SolarPV gets Presidental reward</a></hr>
+		<hr><a href="#">Northern Forest Produces results</a></hr>
+		<hr><a href="#">SolarPV Award contract with national group</a></hr>
+		<hr><a href="#">Solar Power 3.0?</a></hr>
+			
+	</asideleft>
+
+	<footer>	      
+           <a href="SolarPV.html" class="button">FAQ</a>
+		   <a href="AboutUs.html" class="button">About Us</a>
+		   <a href="SolarPV.html" class="button">Gallery</a>
+    </footer>
+
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+		
+
+		
+	
+    
+    
+  </body>
+</html>

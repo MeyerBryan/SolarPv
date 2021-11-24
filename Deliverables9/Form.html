@@ -1,0 +1,41 @@
+<html>
+ <title>Form</title>
+ <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<div id="top">
+	<nav id="topmenu">
+    	<ul>
+			<a href="SolarPV.html" class="button">Home</a>
+			<a href="Login.html" class="button">login</a>
+    	</ul>
+		
+    </nav>
+</div>
+
+ <body>
+   <h1>Register</h1>
+
+   <form method='post' action='form.php' >
+   <div class="container">
+   <legend>FORM</legend>
+   <ul>
+    <li>Username: <input type=text name="username"></li>
+    <li>Password:  <input type=text name="password"></li>
+	<li>First Name: <input type=text name="fname"></li>
+    <li>Middle Name:  <input type=text name="mname"></li>
+	<li>Last Name: <input type=text name="lname"></li>
+		<li>Company Name:
+	<select id="Company Name" name="cname" >
+		<option value="manufcaturer">Manufacturer</option>
+		<option value="test lab">Test lab</option>
+	</select></li>
+    <li>Address:  <input type=text name="address"></li>
+    <li> Office Phone:  <input type="tel" id="ophone" name="ophone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" ></li>
+	<li> Home Phone:  <input type="tel" id="hphone" name="hphone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" ></li>
+	<li>Email: <input type=email name="email"></li>
+   </ul>
+   <input type='submit'>
+   </form>
+   </div>
+
+ </body>
+</html>
